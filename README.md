@@ -44,6 +44,7 @@ La mayoría de tutoriales estándar de OpenStick fallan en el UZ801 v3.0 debido 
 
 | Script | Descripción |
 | :--- | :--- |
+| [`tools/install_web_desktop.py`](tools/install_web_desktop.py) | Instalador del Escritorio Gráfico Web ultraligero (noVNC + Openbox). |
 | [`tools/openstick-dashboard.py`](tools/openstick-dashboard.py) | Panel de control Web nativo en tiempo real (CPU, RAM, Swap, Temp, 4G, Clientes). |
 | [`tools/setup_swap.py`](tools/setup_swap.py) | Expansión de memoria virtual (+512 MB Swap en eMMC con optimización sysctl). |
 | [`tools/build_gpt.py`](tools/build_gpt.py) | Genera la tabla GPT limpia con CRCs válidos para memorias de 3.9 GB. |
@@ -118,6 +119,20 @@ En unos segundos, Windows reconocerá el dispositivo de red **Remote NDIS Compat
 - **Nombre de Red (SSID)**: `4G-UFI-XX`
 - **Contraseña Wi-Fi**: `1234567890`
 - **IP del Stick en Wi-Fi**: `192.168.100.1`
+
+---
+
+## 🖥️ Escritorio Gráfico en el Navegador Web (noVNC + Openbox)
+
+El módem cuenta con un entorno de escritorio completo ultraligero que corre directamente dentro del navegador web (sin instalar programas en Windows ni en el móvil):
+
+- **Desde la PC (por cable USB)**:
+  👉 **`http://192.168.200.1:6080/vnc.html?autoconnect=true&resize=remote`**
+- **Desde el teléfono (por Wi-Fi)**:
+  👉 **`http://192.168.100.1:6080/vnc.html?autoconnect=true&resize=remote`**
+- **Contraseña VNC**: `1`
+- **Componentes**: Administrador de ventanas Openbox, barra de tareas Tint2, explorador de archivos gráfico PCManFM y emulador de terminal LXTerminal.
+- **Acceso VNC nativo tradicional**: Puerto `5901` (`192.168.200.1:5901`).
 
 ---
 
