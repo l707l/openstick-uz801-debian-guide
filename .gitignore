@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
+# Large firmware images and raw binaries
+*.bin
+*.img
+*.mbn
+*.deb
+*.tar.*
+*.zip
+
+# Sensitive user backups (IMEI and RF calibration)
+backups/
+calibration/
+*.backup
+
+# Logs
+*.log
+logs/
