@@ -44,6 +44,8 @@ La mayoría de tutoriales estándar de OpenStick fallan en el UZ801 v3.0 debido 
 
 | Script | Descripción |
 | :--- | :--- |
+| [`tools/openstick-dashboard.py`](tools/openstick-dashboard.py) | Panel de control Web nativo en tiempo real (CPU, RAM, Swap, Temp, 4G, Clientes). |
+| [`tools/setup_swap.py`](tools/setup_swap.py) | Expansión de memoria virtual (+512 MB Swap en eMMC con optimización sysctl). |
 | [`tools/build_gpt.py`](tools/build_gpt.py) | Genera la tabla GPT limpia con CRCs válidos para memorias de 3.9 GB. |
 | [`tools/unsparse.py`](tools/unsparse.py) | Descomprime `rootfs.img` (Android Sparse) a `rootfs_raw.img` (ext4 raw). |
 | [`tools/fastboot_manager.py`](tools/fastboot_manager.py) | Envía comandos a Fastboot vía PyUSB sin requerir herramientas de Android SDK. |
